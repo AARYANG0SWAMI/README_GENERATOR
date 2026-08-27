@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Codeforces README Generator</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+
+    <h1>
+        Codeforces README Generator
+    </h1>
+
+
+    <!-- PROFILE -->
+
+    <div class="card">
+
+        <h2>Profile</h2>
+
+
+        <label>
+            Codeforces Handle
+        </label>
+
+
+        <input
+            id="handle"
+            value="AARYANGOSWAMI"
+        >
+
+
+        <label>
+            GitHub Repository
+        </label>
+
+
+        <input
+            id="github"
+            value="https://github.com/AARYANG0SWAMI/Codeforces"
+        >
+
+    </div>
+
+
+    <!-- ADD PROBLEM -->
+
+    <div class="card">
+
+        <h2>
+            Add New Problem
+        </h2>
+
+
+        <label>
+            Contest ID
+        </label>
+
+
+        <input
+            id="newContest"
+            placeholder="263"
+        >
+
+
+        <label>
+            Index
+        </label>
+
+
+        <input
+            id="newIndex"
+            placeholder="A"
+        >
+
+
+        <label>
+            Problem Name
+        </label>
+
+
+        <input
+            id="newName"
+            placeholder="Beautiful Matrix"
+        >
+
+
+        <label>
+            Rating
+        </label>
+
+
+        <input
+            id="newRating"
+            type="number"
+            placeholder="800"
+        >
+
+
+        <label>
+            Java File
+        </label>
+
+
+        <input
+            id="newFile"
+            placeholder="BeautifulMatrix.java"
+        >
+
+
+        <button
+            class="add"
+            onclick="addProblem()"
+        >
+
+            + Add Problem
+
+        </button>
+
+    </div>
+
+
+    <!-- PROBLEMS -->
+
+    <div class="card">
+
+        <h2>
+            Problems
+        </h2>
+
+
+        <div id="problems">
+
+            Loading problems...
+
+        </div>
+
+    </div>
+
+
+    <!-- STATISTICS -->
+
+    <div class="card">
+
+        <h2>
+            Statistics
+        </h2>
+
+
+        <div
+            class="stats"
+            id="stats"
+        >
+
+            Loading...
+
+        </div>
+
+    </div>
+
+
+    <!-- README -->
+
+    <div class="card">
+
+
+        <button
+            class="generate"
+            onclick="generateREADME()"
+        >
+
+            Generate README
+
+        </button>
+
+
+        <button
+            class="copy"
+            onclick="copyREADME()"
+        >
+
+            Copy Markdown
+
+        </button>
+
+
+        <h2>
+            Generated README.md
+        </h2>
+
+
+        <textarea
+            id="output"
+            placeholder="Your README will appear here..."
+        ></textarea>
+
+
+    </div>
+
+
+</div>
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
